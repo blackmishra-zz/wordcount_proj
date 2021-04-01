@@ -1,0 +1,17 @@
+<html>
+    <a href="{% url 'home' %}">Start again</a>
+    <h1>
+        Total number of words:
+        {{countt}}
+    </h1>
+<h2>Your Text:</h2>
+{{ fulltxt }}
+<h2>Frequency of each word is:</h2>
+{% for word, cnt in data_dic%}
+<h4>{{ word }}  : {{cnt}}</h4>
+
+{% endfor %}
+
+
+
+</html>

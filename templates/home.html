@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h1>
+            Enter the text to count words
+        </h1>
+        
+    <form action="{%url 'count' %}"> 
+        <input type="textarea" rows='5' cols='10' name="fulltxt"/>
+        <input type="submit" value="Count it!"/>
+        <a href="{% url 'about' %}">About us</a>
+    </form>
+    </body>
+</html>
